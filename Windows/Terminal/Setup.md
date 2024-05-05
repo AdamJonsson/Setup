@@ -53,10 +53,7 @@ Import-Module -Name Terminal-Icons
 ---
 
 ## Autocomplete git - [Docs](https://github.com/dahlbyk/posh-git)
-To get autocompleted git commands and branch names, install posh-git
-```powershell
-Install-Module posh-git -Scope CurrentUser -Force
-```
+To get autocompleted git commands and branch names, you just need to activate it
 
 Then edit you profile again by running:
 ```
@@ -65,7 +62,7 @@ code $PROFILE
 
 And then paste in the following line:
 ```powershell
-Import-Module posh-git
+$env:POSH_GIT_ENABLED = $true
 ```
 
 ---
