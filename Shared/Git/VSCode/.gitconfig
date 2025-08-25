@@ -1,0 +1,11 @@
+[user]
+	name = YOUR USERNAME
+	email = your.name@company.com
+[core]
+	editor = code --wait
+	autocrlf = true
+	# We need to enable this for git on windows to handle longer paths
+	longpaths = true
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOATE
+	tool = vscode
